@@ -15,7 +15,7 @@
   <body>
     <h1>Complete combination</h1>
     <h5>you need to udd bootstrap, then you add this custom code to change the default display</h5>
-    <span>Button</span><br>
+    <!-- <span>Button</span><br>
     <div class="button_list">
       <div class="btn btn-primary">primary</div>
       <div class="btn btn-secondary">secondary</div>
@@ -45,14 +45,34 @@
       <div class="color-comb secondary">082032</div>
       <div class="color-comb purple">3D56B2</div>
       <div class="color-comb light">cee5d0</div>
-    </div>
+    </div> -->
     <span>Card</span>
     <div class="card">
       <div class="card-title">
         title
       </div>
       <div class="card-body">
-        body
+        <div class="code">
+
+          .card {
+            width: var(--default-card-size);
+            background-color: #3D56B2;
+            height: 500px;
+            border-radius: 20px;
+            border-right: 5px solid #5C7AEA;
+            border-bottom: 5px solid #5C7AEA;
+          }
+          .card-title {
+            background-color: #D98C00;
+            width: calc(var(--default-card-size) - 20px);
+            padding: 10px;
+            border-radius: 10px;
+            border-bottom: 5px solid #FFA400;
+          }
+          .card-body {
+            padding: 20px;
+          }
+        </div>
       </div>
     </dv>
   </body>
