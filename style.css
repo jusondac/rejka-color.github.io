@@ -3,6 +3,8 @@
   --default-font: 'Oswald', sans-serif;
 }
 
+h5 {margin-bottom: 50px;}
+
 body {
   font-family: var(--default-font);
   display: flex;
@@ -11,6 +13,7 @@ body {
   flex-direction: column;
   padding-top: 5%;
   background-color: #000D6B;
+  color: white;
 }
 
 span {
@@ -107,6 +110,7 @@ span {
 .bg {
   color:white;
   width: 90vw;
+  margin-bottom: 10vh;
 }
 .color-comb{
   height: 10vh;
@@ -116,3 +120,23 @@ span {
 .secondary {background-color: #082032;}
 .purple {background-color:#3D56B2 ;}
 .light {background-color: #cee5d0}
+.card {
+  width: 400px;
+  background-color: #3D56B2;
+  height: 500px;
+  border-radius: 20px;
+  border-right: 5px solid #5C7AEA;
+  border-bottom: 5px solid #5C7AEA;
+}
+.card-title {
+  transform: translate(100px, -20px);
+  background-color: #D98C00;
+  width: 20vw;
+  padding: 10px;
+  border-radius: 10px;
+  border-right: 5px solid #FFA400;
+  border-bottom: 5px solid #FFA400;
+}
+.card-body {
+  padding: 20px;
+}
