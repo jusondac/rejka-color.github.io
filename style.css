@@ -1,6 +1,7 @@
 :root {
   --default-size: 100px;
   --default-font: 'Oswald', sans-serif;
+  --default-card-size: 400px;
 }
 
 h5 {margin-bottom: 50px;}
@@ -121,7 +122,7 @@ span {
 .purple {background-color:#3D56B2 ;}
 .light {background-color: #cee5d0}
 .card {
-  width: 400px;
+  width: var(--default-card-size);
   background-color: #3D56B2;
   height: 500px;
   border-radius: 20px;
@@ -129,12 +130,10 @@ span {
   border-bottom: 5px solid #5C7AEA;
 }
 .card-title {
-  transform: translate(100px, -20px);
   background-color: #D98C00;
-  width: 20vw;
+  width: calc(var(--default-card-size) - 20px);
   padding: 10px;
   border-radius: 10px;
-  border-right: 5px solid #FFA400;
   border-bottom: 5px solid #FFA400;
 }
 .card-body {
